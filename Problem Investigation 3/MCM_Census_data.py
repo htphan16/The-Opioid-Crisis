@@ -78,7 +78,7 @@ def thh_yy(df, yy):
 thh = thh_yy(d_10, '2010').merge(thh_yy(d_11, '2011'), left_index=True, right_index=True).merge(thh_yy(d_12, '2012'), left_index=True, right_index=True).merge(thh_yy(d_13, '2013'), left_index=True, right_index=True).merge(thh_yy(d_14, '2014'), left_index=True, right_index=True).merge(thh_yy(d_15, '2015'), left_index=True, right_index=True).merge(thh_yy(d_16, '2016'), left_index=True, right_index=True)
 thh.to_csv('total_households.csv')
 
-drugs_overall = pd.read_csv('../Problem Investigation 1/state_by_year.csv')
+drugs_overall = pd.read_csv('state_by_year.csv')
 households_overall = pd.read_csv('total_households.csv')
 drugs_households_state = drugs_overall.merge(households_overall, left_on='State', right_on='State')
 
