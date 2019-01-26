@@ -28,7 +28,7 @@ def state_by_year():
 
 state_by_year = state_by_year()
 print(state_by_year)
-#state_by_year.transpose().to_csv('state_by_year.csv')
+state_by_year.to_csv('state_by_year.csv')
 
 oh_by_year = state_by_year.transpose()['OH']
 pa_by_year = state_by_year.transpose()['PA']
